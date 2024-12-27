@@ -1,0 +1,32 @@
+- name: Generate Reports for Elasticsearch and Fission
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: Retrieve Elasticsearch Credentials from Kubernetes Secret
+      shell: >
+        kubectl get secret es-credentials --namespace=default -o jsonpath="{.data.ES_USERNAME}" | base64 --decode
+      register: es_username
+      changed_when: false
+
+    - name: Retrieve Elasticsearch Password from Kubernetes Secret
+      shell: >
+        kubectl get secret es-credentials --namespace=default -o jsonpath="{.data.ES_PASSWORD}" | base64 --decode
+      register: es_password
+      changed_when: false
+
+    - name: Fetch Elasticsearch Cluster Health
+      uri:
+        url: "https://localhost:9200/_cluster/health"
+        method: GET
+        return_content: yes
+        user: "{{ es_username.stdout }}"
+        password: "{{ es_password.stdout }}"
+        validate_certs: no
+      register: es_health
+
+    - name: Save Elasticsearch Health Report
+      copy:
+        content: "{{ es_health.json | to_nice_json }}"
+        dest: "./elasticsearch_health_report_{{ ansible_date_time.iso8601_basic_short }}.json"
+      when: es_health is succeeded
