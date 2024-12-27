@@ -1,0 +1,515 @@
+[
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "xneRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "x3eRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "yHeRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "yXeRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "yneRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "y3eRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "zHeRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "zXeRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "zneRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "z3eRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "0HeRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "0XeRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "0neRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "03eRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "1HeRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "1XeRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "1neRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "13eRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "2HeRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "2XeRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "2neRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "23eRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "3HeRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "3XeRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "3neRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "33eRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "index": {
+            "_index": "soil_ext_data",
+            "_id": "4HeRZo8BaytDqNSt9gJ9",
+            "status": 400,
+            "error": {
+                "type": "mapper_parsing_exception",
+                "reason": "failed to parse field [geo_shape] of type [geo_shape]",
+                "caused_by": {
+                    "type": "x_content_parse_exception",
+                    "reason": "Failed to build [geojson] after last required field arrived",
+                    "caused_by": {
+                        "type": "illegal_argument_exception",
+                        "reason": "No enum constant org.elasticsearch.geometry.ShapeType.FEATURE"
+                    }
+                }
+            }
+        }
+    }
+]

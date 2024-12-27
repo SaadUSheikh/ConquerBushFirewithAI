@@ -1,0 +1,25 @@
+include:
+- mastodon.zip
+kind: ArchiveUploadSpec
+name: mastodon-zip-KWZT
+
+---
+apiVersion: fission.io/v1
+kind: Package
+metadata:
+  creationTimestamp: null
+  name: mastodon
+spec:
+  deployment:
+    checksum: {}
+  environment:
+    name: python
+    namespace: ""
+  source:
+    checksum: {}
+    type: url
+    url: archive://mastodon-zip-KWZT
+    buildcmd: ./build.sh
+status:
+  buildstatus: pending
+  lastUpdateTimestamp: "2024-05-03T13:50:46Z"
