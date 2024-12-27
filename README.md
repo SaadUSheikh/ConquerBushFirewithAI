@@ -1,4 +1,4 @@
-# Team_4_90024_ClusterCloud (Assignment#2)
+# Cluster and Cloud Computing
 
 
 ## Project Purpose 
