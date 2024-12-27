@@ -1,0 +1,72 @@
+include:
+  - harvester/bom_fission.py
+  - harvester/requirements.txt
+  - harvester/build.sh
+kind: ArchiveUploadSpec
+name: bom-fission-py-C707
+
+---
+apiVersion: fission.io/v1
+kind: Package
+metadata:
+  name: bomdatafetcher-package
+spec:
+  environment:
+    name: python
+    namespace: default  # The namespace where our Python environment is
+  source:
+    type: url
+    url: archive://bom-fission-py-C707
+    buildcmd: "bash sbuild.sh"  # Command to run the build script
+  deployment:
+    type: url
+    url: archive://bom-fission-py-C707
+status:
+  buildstatus: pending
+
+---
+apiVersion: fission.io/v1
+kind: Function
+metadata:
+  name: bomdatafetcher
+  namespace: default
+spec:
+  InvokeStrategy:
+    ExecutionStrategy:
+      ExecutorType: poolmgr
+      MinScale: 0
+      MaxScale: 0
+      SpecializationTimeout: 120
+      TargetCPUPercent: 0
+    StrategyType: execution
+  concurrency: 500
+  environment:
+    name: python
+    namespace: default
+  configmaps:
+    - name: es-config
+      namespace: default
+  secrets:
+    - name: es-credentials
+      namespace: default
+  functionTimeout: 60
+  idletimeout: 120
+  package:
+    functionName: bom_fission.fetch_weather_data  # This should be the entry point function in your Python file
+    packageref:
+      name: bomdatafetcher-package
+      namespace: default
+  requestsPerPod: 1
+  resources: {}
+
+---
+apiVersion: fission.io/v1
+kind: TimeTrigger
+metadata:
+  name: bomdatafetcher-timer
+  namespace: default
+spec:
+  cron: "*/30 * * * *"
+  functionref:
+    type: name
+    name: bomdatafetcher
