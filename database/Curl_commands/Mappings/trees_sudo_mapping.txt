@@ -1,0 +1,52 @@
+curl -X PUT "https://127.0.0.1:9200/trees_data" -H "Content-Type: application/json" -u 'elastic:{password goes here}'  -d '
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1
+  },
+  "mappings": {
+    "properties": {
+      "street_add": {"type": "keyword"},
+      "powerline": {"type": "keyword"},
+      "status": {"type": "keyword"},
+      "tree_age": {"type": "keyword"},
+      "postcode": {"type": "integer"},
+      "powerline_": {"type": "keyword"},
+      "dbh": {"type": "keyword"},
+      "easting": {"type": "float"},
+      "ule": {"type": "keyword"},
+      "distance": {"type": "integer"},
+      "htms_id": {"type": "integer"},
+      "height": {"type": "integer"},
+      "st_planted": {"type": "keyword"},
+      "suburb": {"type": "keyword"},
+      "tree_struc": {"type": "keyword"},
+      "ogc_fid": {"type": "integer"},
+      "tree_healt": {"type": "keyword"},
+      "common_nam": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "genus_spec": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "longitude": {"type": "float"},
+      "latitude": {"type": "float"},
+      "northing": {"type": "float"},
+      "geometry": {
+        "type": "geo_point"
+      }
+    }
+  }
+}' | jq '.'

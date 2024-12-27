@@ -1,0 +1,70 @@
+curl -XPUT -k 'https://127.0.0.1:9200/birds_data' \
+  --user 'elastic:{password goes here}' \
+  --header 'Content-Type: application/json' \
+  -d '
+  {
+    "settings": {
+        "number_of_shards": 1,
+        "number_of_replicas": 0
+    },
+    "mappings": {
+        "properties": {
+            "sighting_date": {
+                "type": "date",
+                "format": "yyyy-MM-dd"
+            },
+            "common_name": {
+                "type": "text",
+                "fields": {
+                    "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                    }
+                }
+            },
+            "scientific_name": {
+                "type": "text",
+                "fields": {
+                    "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                    }
+                }
+            },
+            "sighting_count": {
+                "type": "integer"
+            },
+            "victorian_biodiversity_atlas_code": {
+                "type": "integer"
+            },
+            "lat": {
+                "type": "double"
+            },
+            "lon": {
+                "type": "double"
+            },
+            "loc1_desc": {
+                "type": "text"
+            },
+            "lat2": {
+                "type": "double"
+            },
+            "lon2": {
+                "type": "double"
+            },
+            "loc2_desc": {
+                "type": "text",
+                "index": false // Consider whether to index this field
+            },
+            "site_name": {
+                "type": "keyword"
+            },
+            "location_1": {
+                "type": "geo_point"
+            },
+            "location_2": {
+                "type": "geo_point"
+            }
+        }
+    }
+}' | jq '.'

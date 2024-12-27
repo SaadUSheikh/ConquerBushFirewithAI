@@ -1,0 +1,24 @@
+{
+    "siteID": "77062cb7-3e3b-4984-b6d0-03dda76177f2",
+    "siteName": "Box Hill",
+    "siteType": "Standard",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -37.8287277,
+            145.1324
+        ]
+    },
+    "siteHealthAdvices": [
+        {
+            "since": "2024-04-26T10:00:00Z",
+            "until": "2024-04-26T11:00:00Z",
+            "healthParameter": "PM2.5",
+            "averageValue": 9.51,
+            "unit": "&micro;g/m&sup3;",
+            "healthAdvice": "Good",
+            "healthAdviceColor": "#42A93C",
+            "healthCode": "1021"
+        }
+    ]
+}

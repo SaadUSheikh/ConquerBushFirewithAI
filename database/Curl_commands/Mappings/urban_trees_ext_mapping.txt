@@ -1,0 +1,99 @@
+curl -XPUT -k 'https://127.0.0.1:9200/urban_trees_ext_data' \
+  --user 'elastic:{password goes here}' \
+  --header 'Content-Type: application/json' \
+  -d '
+  {
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1
+  },
+  "mappings": {
+    "properties": {
+      "com_id": {
+        "type": "integer"
+      },
+      "common_name": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "scientific_name": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "genus": {
+        "type": "keyword"
+      },
+      "family": {
+        "type": "keyword"
+      },
+      "diameter_breast_height": {
+        "type": "integer",
+        "null_value": 0  // Assuming you want to treat null as 0
+      },
+      "year_planted": {
+        "type": "date",
+        "format": "yyyy"
+      },
+      "date_planted": {
+        "type": "date",
+        "format": "yyyy-MM-dd"
+      },
+      "age_description": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "useful_life_expectency": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "useful_life_expectency_value": {
+        "type": "integer"
+      },
+      "precinct": {
+        "type": "keyword",
+        "ignore_above": 256  // Only indexing first 256 characters
+      },
+      "located_in": {
+        "type": "keyword"
+      },
+      "uploaddate": {
+        "type": "date",
+        "format": "yyyy-MM-dd"
+      },
+      "coordinatelocation": {
+        "type": "geo_point"
+      },
+      "latitude": {
+        "type": "double"
+      },
+      "longitude": {
+        "type": "double"
+      },
+      "easting": {
+        "type": "double"
+      },
+      "northing": {
+        "type": "double"
+      },
+      "geolocation": {
+        "type": "geo_point"
+      }
+    }
+  }
+}' | jq '.'

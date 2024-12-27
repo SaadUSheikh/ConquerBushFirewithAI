@@ -1,0 +1,4 @@
+../backend/es-config/default/ES_HOST
+../backend/es-config/default/ES_PORT
+../backend/es-credentials/default/ES_USERNAME
+../backend/es-credentials/default/ES_PASSWORD

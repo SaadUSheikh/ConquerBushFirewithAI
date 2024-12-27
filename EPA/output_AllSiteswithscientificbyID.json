@@ -1,0 +1,217 @@
+{
+    "siteID": "c69ed768-34d2-4d72-86f3-088c250758a8",
+    "siteName": "Alphington",
+    "siteType": "Standard",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -37.7784081,
+            145.0306
+        ]
+    },
+    "siteHealthAdvices": [
+        {
+            "since": "2024-04-26T10:00:00Z",
+            "until": "2024-04-26T11:00:00Z",
+            "healthParameter": "PM2.5",
+            "averageValue": 5.81,
+            "unit": "&micro;g/m&sup3;",
+            "healthAdvice": "Good",
+            "healthAdviceColor": "#42A93C",
+            "healthCode": "1021"
+        }
+    ],
+    "parameters": [
+        {
+            "name": "SO2",
+            "timeSeriesReadings": [
+                {
+                    "timeSeriesName": "1HR_AV",
+                    "readings": [
+                        {
+                            "since": "2024-04-26T10:00:00Z",
+                            "until": "2024-04-26T11:00:00Z",
+                            "averageValue": 0.34,
+                            "unit": "ppb",
+                            "confidence": 108.33,
+                            "totalSample": 13,
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1011"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CO",
+            "timeSeriesReadings": [
+                {
+                    "timeSeriesName": "1HR_AV",
+                    "readings": [
+                        {
+                            "since": "2024-04-26T10:00:00Z",
+                            "until": "2024-04-26T11:00:00Z",
+                            "averageValue": 0.26,
+                            "unit": "ppm",
+                            "confidence": 108.33,
+                            "totalSample": 13,
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1026"
+                        }
+                    ]
+                },
+                {
+                    "timeSeriesName": "8HR_AV",
+                    "readings": [
+                        {
+                            "since": "2024-04-26T03:00:00Z",
+                            "until": "2024-04-26T11:00:00Z",
+                            "averageValue": 0.16,
+                            "unit": "ppm",
+                            "confidence": 107.29,
+                            "totalSample": 104
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PM2.5",
+            "timeSeriesReadings": [
+                {
+                    "timeSeriesName": "1HR_AV",
+                    "readings": [
+                        {
+                            "since": "2024-04-26T10:00:00Z",
+                            "until": "2024-04-26T11:00:00Z",
+                            "averageValue": 5.81,
+                            "unit": "&micro;g/m&sup3;",
+                            "confidence": 108.33,
+                            "totalSample": 13,
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1021"
+                        }
+                    ]
+                },
+                {
+                    "timeSeriesName": "24HR_AV",
+                    "readings": [
+                        {
+                            "since": "2024-04-25T11:00:00Z",
+                            "until": "2024-04-26T11:00:00Z",
+                            "averageValue": 3.3,
+                            "unit": "&micro;g/m&sup3;",
+                            "confidence": 108.33,
+                            "totalSample": 312,
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1029"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "API",
+            "timeSeriesReadings": [
+                {
+                    "timeSeriesName": "1HR_AV",
+                    "readings": [
+                        {
+                            "since": "2024-04-26T10:00:00Z",
+                            "until": "2024-04-26T11:00:00Z",
+                            "averageValue": 0.62,
+                            "unit": "none",
+                            "confidence": 108.33,
+                            "totalSample": 13
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Visibility",
+            "timeSeriesReadings": [
+                {
+                    "timeSeriesName": "1HR_AV",
+                    "readings": [
+                        {
+                            "since": "2024-04-26T10:00:00Z",
+                            "until": "2024-04-26T11:00:00Z",
+                            "averageValue": 70,
+                            "unit": "km",
+                            "confidence": 108.33,
+                            "totalSample": 13
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "O3",
+            "timeSeriesReadings": [
+                {
+                    "timeSeriesName": "1HR_AV",
+                    "readings": [
+                        {
+                            "since": "2024-04-26T10:00:00Z",
+                            "until": "2024-04-26T11:00:00Z",
+                            "averageValue": 9,
+                            "unit": "ppb",
+                            "confidence": 108.33,
+                            "totalSample": 13,
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1001"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PM10",
+            "timeSeriesReadings": [
+                {
+                    "timeSeriesName": "1HR_AV",
+                    "readings": [
+                        {
+                            "since": "2024-04-26T10:00:00Z",
+                            "until": "2024-04-26T11:00:00Z",
+                            "averageValue": 13.43,
+                            "unit": "&micro;g/m&sup3;",
+                            "confidence": 108.33,
+                            "totalSample": 13,
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1016"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "NO2",
+            "timeSeriesReadings": [
+                {
+                    "timeSeriesName": "1HR_AV",
+                    "readings": [
+                        {
+                            "since": "2024-04-26T10:00:00Z",
+                            "until": "2024-04-26T11:00:00Z",
+                            "averageValue": 16,
+                            "unit": "ppb",
+                            "confidence": 108.33,
+                            "totalSample": 13,
+                            "healthAdvice": "Good",
+                            "healthAdviceColor": "#42A93C",
+                            "healthCode": "1006"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

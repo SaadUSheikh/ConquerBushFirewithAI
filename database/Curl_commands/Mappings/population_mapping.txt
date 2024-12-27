@@ -1,0 +1,68 @@
+curl -XPUT -k 'https://127.0.0.1:9200/population_density_sudo' \
+  --user 'elastic:password_goes_here' \
+  --header 'Content-Type: application/json' \
+  -d '
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1
+  },
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "primaryindex": {
+        "type": "integer"
+      },
+      "state_name_2016": {
+        "type": "keyword"
+      },      
+      "sa2_name_2016": {
+        "type": "keyword"
+      },
+      "sa3_name_2016": {
+        "type": "keyword"
+      },
+      "sa4_name_2016": {
+        "type": "keyword"
+      },
+      "gccsa_name_2016": {
+        "type": "keyword"
+      },
+      "state_code_2016": {
+        "type": "integer"
+      },
+      "sa2_maincode_2016": {
+        "type": "keyword"
+      },
+      "sa3_code_2016": {
+        "type": "integer"
+      },
+      "sa4_code_2016": {
+        "type": "integer"
+      },
+      "gccsa_code_2016": {
+        "type": "keyword"
+      },
+      "erp_2001": {
+        "type": "integer"
+      },
+      "erp_2011": {
+        "type": "integer"
+      },
+      "erp_2021": {
+        "type": "integer"
+      },
+      "pop_density_2021_people_per_km2": {
+        "type": "float"
+      },
+      "area_km2": {
+        "type": "float"
+      },
+      "geometry": {
+        "type": "geo_shape"
+      }
+    }
+  }
+}' | jq '.'

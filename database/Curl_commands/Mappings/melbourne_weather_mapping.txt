@@ -1,0 +1,101 @@
+#melbourne_weather_mapping
+
+curl -XPUT -k 'https://127.0.0.1:9200/melbourne_weather' \
+  --user 'elastic:{password goes here}' \
+  --header 'Content-Type: application/json' \
+  -d '{
+    "settings": {
+      "number_of_shards": 3,
+      "number_of_replicas": 1
+    },
+    "mappings": {
+      "properties": {
+        "station": {
+          "type": "keyword"
+        },
+        "current_date_time": {
+          "type": "date",
+          "format": "date_hour_minute"
+        },
+        "latitude": {
+          "type": "float"
+        },
+        "longitude": {
+          "type": "float"
+        },
+        "temp": {
+          "type": "float"
+        },
+        "app_temp": {
+          "type": "float"
+        },
+        "dew_point": {
+          "type": "float"
+        },
+        "rel_hum": {
+          "type": "float"
+        },
+        "delta_t": {
+          "type": "float"
+        },
+        "wind_dir": {
+          "type": "keyword"
+        },
+        "wind_spd": {
+          "type": "integer"
+        },
+        "wind_gust": {
+          "type": "integer"
+        },
+        "wind_spd_kts": {
+          "type": "integer"
+        },
+        "wind_gust_kts": {
+          "type": "integer"
+        },
+        "press_msl": {
+          "type": "float"
+        },
+        "rain": {
+          "type": "float"
+        },
+        "low_temp": {
+          "type": "float"
+        },
+        "low_time": {
+          "type": "keyword"
+        },
+        "high_temp": {
+          "type": "float"
+        },
+        "high_time": {
+          "type": "keyword"
+        },
+        "high_wind_gust_dir": {
+          "type": "keyword"
+        },
+        "high_wind_gust_kmh": {
+          "type": "integer"
+        },
+        "high_wind_gust_kts": {
+          "type": "integer"
+        },
+        "high_wind_gust_time": {
+          "type": "keyword"
+        }
+      }
+    }
+  }' | jq '.'
+
+
+
+##To delete all docs
+
+curl -k -X POST "https://127.0.0.1:9200/melbourne_weather/_delete_by_query" \                                     ─╯
+  --user 'elastic:password' \
+  --header 'Content-Type: application/json' \
+  -d '{
+    "query": { 
+      "match_all": {} 
+    }
+  }' | jq '.'

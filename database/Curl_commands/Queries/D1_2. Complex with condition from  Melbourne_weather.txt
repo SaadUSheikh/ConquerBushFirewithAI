@@ -1,0 +1,32 @@
+#Complex Querying documents in melbourne_weather 
+#where the rain  exists, filter for those with a temp (temperature) > than 25.0
+#and sort the results by rain in descending order. 
+
+
+
+curl -X GET -k "https://127.0.0.1:9200/melbourne_weather/_search" \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "query": {
+      "bool": {
+        "must": {
+          "exists": { "field": "rain" }
+        },
+        "filter": [
+          { "range": { "temp": { "gt": 25.0 } } }
+        ]
+      }
+    },
+    "sort": [
+      { "rain": { "order": "desc" } }
+    ],
+    "aggs": {
+      "average_rain": {
+        "avg": {
+          "field": "rain"
+        }
+      }
+    },
+    "size": 10
+  }' \
+  --user 'elastic:7f5HcK>2$(5E' | jq '.'

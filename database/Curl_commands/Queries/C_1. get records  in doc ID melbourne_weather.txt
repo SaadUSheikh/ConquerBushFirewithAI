@@ -1,0 +1,22 @@
+#R28MMo8BaytDqNStPJil
+#Rm8MMo8BaytDqNStI5jL
+  
+curl -XPUT -k "https://127.0.0.1:9200/melbourne_weather/_doc/R28MMo8BaytDqNStPJil"\
+  --header 'Content-Type: application/json'\
+  --data '{
+        "rain": 12.54,
+        "temp": 43.2,
+        "wind_spd_kts": 80
+  }'\
+  --user 'elastic:7f5HcK>2$(5E' | jq '.'
+  
+  
+
+curl -XPUT -k "https://127.0.0.1:9200/melbourne_weather/_doc/Rm8MMo8BaytDqNStI5jL"\
+  --header 'Content-Type: application/json'\
+  --data '{
+        "rain": 42.54,
+        "temp": 66.2,
+        "wind_spd_kts": 87
+    }'\
+  --user 'elastic:7f5HcK>2$(5E' | jq '.'

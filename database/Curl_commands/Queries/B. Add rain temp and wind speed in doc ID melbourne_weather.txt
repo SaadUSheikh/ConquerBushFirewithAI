@@ -1,0 +1,25 @@
+#add entry in the melbourne_weather
+curl -X POST -k "https://127.0.0.1:9200/melbourne_weather/_doc" \
+  --header 'Content-Type: application/json' \
+  --data '{
+        "rain": 12.54,
+        "temp": 43.2,
+        "wind_spd_kts": 80
+  }' \
+  --user 'elastic:7f5HcK>2$(5E' | jq '.'
+
+
+
+curl -X POST -k "https://127.0.0.1:9200/melbourne_weather/_doc" \
+  --header 'Content-Type: application/json' \
+  --data '{
+        "rain": 42.54,
+        "temp": 66.2,
+        "wind_spd_kts": 87
+  }' \
+  --user 'elastic:7f5HcK>2$(5E' | jq '.'
+  
+  
+  
+  
+

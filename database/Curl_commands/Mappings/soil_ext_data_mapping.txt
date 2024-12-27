@@ -1,0 +1,53 @@
+curl -XPUT -k 'https://127.0.0.1:9200/soil_ext_data' \
+  --user 'elastic:{password_goes_here}' \
+  --header 'Content-Type: application/json' \
+  -d '
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1
+  },
+  "mappings": {
+    "properties": {
+      "geo_point_2d": {
+        "type": "geo_point"
+      },
+      "geo_shape": {
+        "type": "geo_shape"
+      },
+      "source": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "shape_area": {
+        "type": "double"
+      },
+      "soil": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "sub_base": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "shape_len": {
+        "type": "double"
+      }
+    }
+  }
+}' | jq '.'

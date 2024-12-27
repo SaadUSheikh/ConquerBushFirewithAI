@@ -1,0 +1,36 @@
+## mastodon_statuses_mapping
+
+curl -XPUT -k 'https://127.0.0.1:9200/mastodon' \
+   --user 'elastic:{password goes here}' \
+   --header 'Content-Type: application/json' \
+   --data '{
+    "settings": {
+        "index": {
+            "number_of_shards": 3,
+            "number_of_replicas": 1
+        }
+    },
+    "mappings": {
+        "properties": {
+            "created_at": {
+                "type": "date",
+                "format": "date_hour_minute"
+            },
+            "username": {
+                "type": "text"
+            },
+            "content": {
+                "type": "text"
+            },
+            "hashtags": {
+                "type": "text"
+            }
+        }
+    }
+}'  | jq '.'
+
+## to delete mastodon index
+
+curl -XDELETE -k 'https://127.0.0.1:9200/mastodon' \
+   --user 'elastic:{password goes here}'
+

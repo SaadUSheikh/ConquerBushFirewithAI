@@ -1,0 +1,214 @@
+{
+    "totalRecords": 12,
+    "records": [
+        {
+            "id": "B351BFBF-D75A-4600-B6E4-D987D664C8BA",
+            "environmentalSegment": "AIR",
+            "title": "Good",
+            "colour": "#42A93C",
+            "since": "2024-04-26T07:00:00Z",
+            "until": "2024-04-27T07:00:00Z",
+            "isActive": true,
+            "regionName": "Geelong",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.1492813,
+                    144.3598269
+                ]
+            }
+        },
+        {
+            "id": "59F4822C-1E03-42F4-9F73-7FEF9AC99609",
+            "environmentalSegment": "AIR",
+            "title": "Fair",
+            "colour": "#EEC900",
+            "since": "2024-04-26T07:00:00Z",
+            "until": "2024-04-27T07:00:00Z",
+            "description": "<p>Due to cold overnight temperatures and still conditions, air quality may be good to fair as a result of domestic solid fuel heaters. There may also be some smoke associated with planned and agricultural burns over the weekend.&nbsp;</p>",
+            "isActive": true,
+            "regionName": "Latrobe Valley",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.2097173,
+                    146.4711353
+                ]
+            }
+        },
+        {
+            "id": "683A59ED-C69A-41EC-88BD-00C16767468B",
+            "environmentalSegment": "AIR",
+            "title": "Fair",
+            "colour": "#EEC900",
+            "since": "2024-04-26T07:00:00Z",
+            "until": "2024-04-27T07:00:00Z",
+            "description": "<p>Due to cold overnight temperatures and still conditions, air quality may be good to fair as a result of domestic solid fuel heaters. There may also be some smoke associated with planned and agricultural burns over the weekend.&nbsp;</p>",
+            "isActive": true,
+            "regionName": "Melbourne",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -37.8142176,
+                    144.9631608
+                ]
+            }
+        },
+        {
+            "id": "D5DD350B-1C50-421B-8816-2E01EBBE375E",
+            "environmentalSegment": "AIR",
+            "title": "Fair",
+            "colour": "#EEC900",
+            "since": "2024-04-26T07:00:00Z",
+            "until": "2024-04-27T07:00:00Z",
+            "description": "<p>Due to cold overnight temperatures and still conditions, air quality may be good to fair as a result of domestic solid fuel heaters. There may also be some smoke associated with planned and agricultural burns over the weekend.&nbsp;</p>",
+            "isActive": true,
+            "regionName": "Central",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -37.8142176,
+                    144.9631608
+                ]
+            }
+        },
+        {
+            "id": "1FE6B9A0-814C-404D-BF3A-7A388444E817",
+            "environmentalSegment": "AIR",
+            "title": "Good",
+            "colour": "#42A93C",
+            "since": "2024-04-26T07:00:00Z",
+            "until": "2024-04-27T07:00:00Z",
+            "isActive": true,
+            "regionName": "East Gippsland",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.2097173,
+                    146.4711353
+                ]
+            }
+        },
+        {
+            "id": "C5D6D0D8-8D23-44F3-84BE-3B4DFFE1F757",
+            "environmentalSegment": "AIR",
+            "title": "Good",
+            "colour": "#42A93C",
+            "since": "2024-04-26T07:00:00Z",
+            "until": "2024-04-27T07:00:00Z",
+            "isActive": true,
+            "regionName": "Mallee",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -37.8142176,
+                    144.9631608
+                ]
+            }
+        },
+        {
+            "id": "C02D89CB-D4C6-4660-9741-A5924F88EEC8",
+            "environmentalSegment": "AIR",
+            "title": "Good",
+            "colour": "#42A93C",
+            "since": "2024-04-26T07:00:00Z",
+            "until": "2024-04-27T07:00:00Z",
+            "isActive": true,
+            "regionName": "North Central",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.2097173,
+                    146.4711353
+                ]
+            }
+        },
+        {
+            "id": "10414030-2C3B-4E95-B64F-5AAF65A11A62",
+            "environmentalSegment": "AIR",
+            "title": "Fair",
+            "colour": "#EEC900",
+            "since": "2024-04-26T07:00:00Z",
+            "until": "2024-04-27T07:00:00Z",
+            "description": "<p>Due to cold overnight temperatures and still conditions, air quality may be good to fair as a result of domestic solid fuel heaters. There may also be some smoke associated with planned and agricultural burns over the weekend.&nbsp;</p>",
+            "isActive": true,
+            "regionName": "North East",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -37.8142176,
+                    144.9631608
+                ]
+            }
+        },
+        {
+            "id": "129416FF-A0D2-4F30-AC5F-103C416690A6",
+            "environmentalSegment": "AIR",
+            "title": "Good",
+            "colour": "#42A93C",
+            "since": "2024-04-26T07:00:00Z",
+            "until": "2024-04-27T07:00:00Z",
+            "isActive": true,
+            "regionName": "Northern Country",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.1492813,
+                    144.3598269
+                ]
+            }
+        },
+        {
+            "id": "E26A8180-B326-43CA-A069-A2E07513870E",
+            "environmentalSegment": "AIR",
+            "title": "Good",
+            "colour": "#42A93C",
+            "since": "2024-04-26T07:00:00Z",
+            "until": "2024-04-27T07:00:00Z",
+            "isActive": true,
+            "regionName": "South West",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.1492813,
+                    144.3598269
+                ]
+            }
+        },
+        {
+            "id": "237EECBD-B3BC-4736-8CD4-B02F275CCD12",
+            "environmentalSegment": "AIR",
+            "title": "Fair",
+            "colour": "#EEC900",
+            "since": "2024-04-26T07:00:00Z",
+            "until": "2024-04-27T07:00:00Z",
+            "description": "<p>Due to cold overnight temperatures and still conditions, air quality may be good to fair as a result of domestic solid fuel heaters. There may also be some smoke associated with planned and agricultural burns over the weekend.&nbsp;</p>",
+            "isActive": true,
+            "regionName": "West and South Gippsland",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.1492813,
+                    144.3598269
+                ]
+            }
+        },
+        {
+            "id": "3668355F-9B74-4EB8-8E0C-845B720628E6",
+            "environmentalSegment": "AIR",
+            "title": "Good",
+            "colour": "#42A93C",
+            "since": "2024-04-26T07:00:00Z",
+            "until": "2024-04-27T07:00:00Z",
+            "isActive": true,
+            "regionName": "Wimmera",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.2097173,
+                    146.4711353
+                ]
+            }
+        }
+    ]
+}

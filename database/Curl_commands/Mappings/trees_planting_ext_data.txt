@@ -1,0 +1,92 @@
+curl -XPUT -k 'https://127.0.0.1:9200/trees_planting_ext_data' \
+  --user 'elastic:{password goes here}' \
+  --header 'Content-Type: application/json' \
+  -d '
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1
+  },
+  "mappings": {
+    "properties": {
+      "geo_point_2d": {
+        "type": "geo_point"
+      },
+      "geo_shape": {
+        "type": "geo_shape"
+      },
+      "segid": {
+        "type": "keyword"
+      },
+      "streetname": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "streetid": {
+        "type": "keyword"
+      },
+      "schedule": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "segdescr": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "str_from": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "str_to": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "mapstatus": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "statusid": {
+        "type": "keyword"
+      },
+      "segpart": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      }
+    }
+  }
+}' | jq '.'

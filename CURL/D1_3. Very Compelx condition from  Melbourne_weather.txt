@@ -1,0 +1,25 @@
+#NESTED query 
+
+curl -X GET -k "https://127.0.0.1:9200/melbourne_weather/_search" \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "query": {
+        "bool": {
+            "must": [
+                {
+                    "range": {
+                        "temp": {
+                            "gt": 1.0
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "station": "Point Cook"
+                    }
+                }
+            ]
+        }
+    }
+}' \
+  --user 'elastic:7f5HcK>2$(5E' | jq '.'

@@ -1,0 +1,7 @@
+ curl -X GET -k "https://127.0.0.1:9200/melbourne_weather/_search"   --header 'Content-Type: application/json'   --data '{
+    "size": 10,
+    "query": {
+      "match_all": {}
+    },
+    "_source": ["_id"]  // Include only the _id field in the source.
+  }'   --user 'elastic:7f5HcK>2$(5E' | jq '.hits.hits[] | ._id'

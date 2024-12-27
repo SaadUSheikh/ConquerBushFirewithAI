@@ -1,0 +1,19 @@
+# Command to query all rain entries
+curl -X GET -k "https://127.0.0.1:9200/melbourne_weather/_search"   --header 'Content-Type: application/json'   --data '{
+    "query": {
+      "exists": {
+        "field": "rain"
+      }
+    }
+  }'   --user 'elastic:7f5HcK>2$(5E' | jq '.'
+  
+
+
+# Query with a specific value
+curl -XGET -k "https://127.0.0.1:9200/melbourne_weather/_search"  --header 'Content-Type: application/json'  --data '{
+      "query": {
+        "match": {
+          "rain": 0.4
+        }
+      }
+    }'  --user 'elastic:7f5HcK>2$(5E' | jq '.'  
